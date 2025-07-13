@@ -319,39 +319,52 @@ strong{
 }
 /* shoes-section-continer ends */
 /* footer session styling starts */
-.footer-main{
+.contact-session{
     max-width: 1212px;
-    margin: 0 auto 300px auto;
+    margin: 0px auto 350px auto;
     background-color: #FFF2F1;
     border-radius: 18px;
 }
-.footer-content{
-    text-align: center;
-    padding: 150px 80px;
-}
-.footer-tittle{
-    font-size: 30px;
-    font-weight: semibold;
-    color: #1F1F1F;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 10px;
-}
-.footer-sub-tittle{
-    font-size:16px;
-    font-weight: medium;
-    color: #707070;
+.main *{
     margin-bottom: 15px;
 }
-.content{
-    position: relative;
+.main{
+    padding: 180px 80px;
     text-align: center;
 }
-.last-input{
-    background-color: #ffff;
+.contact-tittle{
+    font-size: 36px;
+    font-weight: medium;
+    font-family: "Poppins", sans-serif;
 }
-.button{
-    position: absolute;
-    top: 15px;
-    left: 10px;
+.contact-tittle{
+    font-size: 16px;
+    color: #707070;
+     font-family: "Poppins", sans-serif;
 }
+.contact{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact input{
+   background-color: #fff;
+}
+.contact button{
+  position: relative;
+  right: 50px;
+  border: 2px solid red;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px 17px;
+  background-image: linear-gradient(#FF589B,#FF136F);
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: medium;
+
+}
+
 /* footer session ends */
