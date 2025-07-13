@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 body{
     background-color: #E5E5E5;
@@ -71,6 +72,29 @@ nav ul li a::after{
 }
 nav ul li a:hover::after{
     width: 100%;
+}
+/* sub-menu styling */
+.product{
+    position: relative;
+}
+.downarrow{
+    position: absolute;
+    width: 200px;
+    background-color: #ffff;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 3px 5px;
+    top: 30px;
+    visibility: hidden;
+    transform: translate(500px);
+  transition: 0.5s ease-in;
+}
+.downarrow li{
+    border-bottom: 2px dotted red;
+}
+.product:hover .downarrow{
+    visibility: visible;
+    transform: translate(0);
 }
 /* banner continer section styling starts*/
 .banner{
@@ -221,6 +245,7 @@ nav ul li a:hover::after{
     color: #1F1F1F;
    font-family: "Poppins", sans-serif; 
    margin-bottom: 15px;
+   text-align: center;
 }
 .shoes-sub-tittle{
     font-size: 16px;
@@ -292,5 +317,41 @@ strong{
     color: #000000;
     font-weight: bold;
 }
-
 /* shoes-section-continer ends */
+/* footer session styling starts */
+.footer-main{
+    max-width: 1212px;
+    margin: 0 auto 300px auto;
+    background-color: #FFF2F1;
+    border-radius: 18px;
+}
+.footer-content{
+    text-align: center;
+    padding: 150px 80px;
+}
+.footer-tittle{
+    font-size: 30px;
+    font-weight: semibold;
+    color: #1F1F1F;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px;
+}
+.footer-sub-tittle{
+    font-size:16px;
+    font-weight: medium;
+    color: #707070;
+    margin-bottom: 15px;
+}
+.content{
+    position: relative;
+    text-align: center;
+}
+.last-input{
+    background-color: #ffff;
+}
+.button{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+/* footer session ends */
